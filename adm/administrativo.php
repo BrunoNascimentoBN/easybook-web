@@ -72,6 +72,8 @@
 	<div class="container theme-showcase" role="main">
 		<div class="page-header">
 			<h1>Usuários</h1>
+			<hr/>
+			<a button type="button" class="btn btn-success" href="cad_usuario.php">Cadastrar usuário</a>
 		</div>
 		<div class="row">
 			<div class="col-md-12">
@@ -100,7 +102,7 @@
 							<td>". $row_usuario['niveis_acesso_id'] ."</td>
 							<td>". $row_usuario['created'] ."</td>
 							<td>
-								<a button type='button' class='btn btn-xs btn-primary'>Visualizar</button>
+								<a button type='button' class='btn btn-xs btn-primary' href='ver_usuario.php?id=" .$row_usuario['id']."'>Visualizar</button>
 								<a button type='button' class='btn btn-xs btn-warning' href='edit_usuario.php?id=" . $row_usuario['id'] . "'>Editar</button>
 								<a button type='button' class='btn btn-xs btn-danger' href='proc_apagar_usuario.php?id=" . $row_usuario['id'] . "'>Apagar</button>
 							</td>
