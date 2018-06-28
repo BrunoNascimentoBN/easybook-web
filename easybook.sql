@@ -1,5 +1,5 @@
-create schema easybook;
-use easybook;
+create schema eb;
+use eb;
 
 CREATE TABLE `usuarios` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -31,7 +31,7 @@ CREATE TABLE `livros` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 
-INSERT INTO `easybook`.`usuarios`
+INSERT INTO `eb`.`usuarios`
 (`id`,
 `nome`,
 `email`,
@@ -50,7 +50,7 @@ VALUES
 '2018-06-12 10:45:00',
 NULL);
 
-INSERT INTO `easybook`.`usuarios`
+INSERT INTO `eb`.`usuarios`
 (`id`,
 `nome`,
 `email`,
