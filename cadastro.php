@@ -10,14 +10,7 @@ if($btnCadUsuario){
 	$email_usuario = $_POST['email'];
 	
 	$result_usuario = "INSERT INTO usuarios(nome,senha,email, niveis_acesso_id) VALUES ('$nome_usuario','$senha_usuario','$email_usuario','3')";
-	//var_dump($dados);
-	//$dados['senha'] = password_hash($dados['senha'], PASSWORD_DEFAULT);
-	
-	//$result_usuario = "INSERT INTO usuarios (nome, email, senha) VALUES (
-	//				'" .$dados['nome']. "',
-		//			'" .$dados['email']. "',
-			//		'" .$dados['senha']. "',
-				//	)";
+
 	$resultado_usario = mysqli_query($conn, $result_usuario);
 	if(mysqli_insert_id($conn)){
 		$_SESSION['msgcad'] = "Usuário cadastrado com sucesso";
